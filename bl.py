@@ -1,5 +1,3 @@
-#!/Library/Frameworks/Python.framework/Versions/3.5/bin/python3
-
 import requests, sys, re
 from bs4 import BeautifulSoup as bs
 
