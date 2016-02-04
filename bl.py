@@ -42,4 +42,5 @@ if __name__ == "__main__":
         print(type(e), " exception had raised.", file=sys.stderr)
 
     left_minutes = get_next_bus_time(src)
-    print(left_minutes)
+    for minute in left_minutes:
+        print(minute)
