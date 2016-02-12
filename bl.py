@@ -11,9 +11,9 @@ def parse_args():
     parser.add_argument("-f", help=f_help, default="fun")
 
     t_help =    """
-                set destination point. default: kameda
+                set destination point. default: tomioka
                 """
-    parser.add_argument("-t", help=t_help, default="kameda")
+    parser.add_argument("-t", help=t_help, default="tomioka")
     parser.add_argument("--list", help="list up station names", action="store_true")
 
     args = parser.parse_args()
