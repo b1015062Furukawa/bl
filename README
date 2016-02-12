@@ -1,8 +1,28 @@
-This is python Hakodate Buslocation wrappar program.
-only from FUN via 亀田支所
+次のバスがいつ来るかをコマンドラインで取得するプログラム
 
-how to use
+python 3.5.1 でのみ動作を確認しています
+使用している外部モジュールは
+ requests 2.9.1
+ beautifulsoup 4.4.1
 
-python bl.py
+使用方法
+bl.py を実行してください
+-help オプションで簡単な使用方法が見られます
 
->> [34, 22, '*****']
+例
+
+引数なしで実行すると富岡へ向かう未来大に来るバスの時間が表示されます
+$python3 bl.py
+20
+****
+
+-f, -t オプションでそれぞれ出発駅、目的地を設定できます
+$python3 bl.py -f tomioka -t fun
+6
+52
+
+--list オプションで登録されているば駅の一覧を見れます
+$python3 bl.py --list
+kameda
+fun
+tomioka
