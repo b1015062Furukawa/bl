@@ -20,7 +20,7 @@ $python3 bl.py -f tomioka -t fun
 6
 52
 
---list オプションで登録されているば駅の一覧を見れます
+--list オプションで登録されているバス停の一覧を見れます
 $python3 bl.py --list
 kameda
 fun
