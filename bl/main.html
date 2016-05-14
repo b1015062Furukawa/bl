@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/base.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>函館バス　バスロケーション　-　函館バス接近情報／区間選択検索</title>
+<!-- InstanceEndEditable --><link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="container">
+<a name="top"></a>
+<a href="index.php"><img src="img/headertop.jpg" alt="" width="840" height="100" border="0"></a>
+<div id="g-menu"><img src="img/g_menu.gif" width="840" height="24" border="0" usemap="#Gmenu">
+<map name="Gmenu" id="Gmenu">
+<area shape="rect" coords="7,2,101,22" href="s_timetable01.php" alt="時刻表検索">
+<area shape="rect" coords="107,2,225,22" href="search01.php" alt="バス接近情報検索">
+<area shape="rect" coords="232,2,348,22" href="s_landmark01.php" alt="ランドマーク検索">
+<area shape="rect" coords="733,1,837,22" href="http://www.hotweb.or.jp/hakobus/" alt="函館バスTOP">
+<area shape="rect" coords="456,1,507,22" href="help.php" alt="操作方法">
+<area shape="rect" coords="521,2,617,22" href="notes.php" alt="注意事項/免責事項">
+<area shape="rect" coords="628,2,702,22" href="sitemap.php" alt="サイトマップ">
+</map>
+<!-- end #g-menu--></div>
+<!-- InstanceBeginEditable name="h1-title" -->
+<h1><img src="img/title01.gif" width="329" height="45"></h1>
+<!-- InstanceEndEditable -->
+<br>
+<table width="840" border="0" cellcpacing="0" cellpadding="0">
+<tr>
+			
+<td width="210"><center><a href="banner.php?id=1"><img src="banner/ロープウェイtop-b03.gif" alt="函館山ロープウェイ" width="200" height="60" border="0"></a></center></td>
+			
+<td width="210"><center><a href="banner.php?id=2"><img src="banner/top-b01.gif" alt="道南タウンナビ" width="200" height="60" border="0"></a></center></td>
+			
+<td width="210"><center><a href="banner.php?id=4"><img src="banner/banner.gif" alt="千年北海道手形" width="200" height="60" border="0"></a></center></td>
+			
+<td width="210"><center><a href="banner.php?id=3"><img src="banner/jbas-b.gif" alt="Jバス" width="200" height="60" border="0"></a></center></td>
+	
+</table>
+<div id="news">
+<h6><img src="img/t_info.gif" alt="函館バスからのお知らせ" width="200" height="30"></h6>
+<p class="news-text">函館バスからのお知らせはありません。</p>
+<!-- end #news -->
+</div>
+<div id="contents">
+<!-- InstanceBeginEditable name="contents" -->
+<h2>区間選択検索</h2>
+<p align="center">利用区間を選択して下さい</p>
+<!-- <form name="form1" method="post" action="result.php"> -->
+<form name="form1" method="post" action="/search02.php">
+<div align="center">
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+<tr class="c90">
+<td><div align="center">乗車停留所名&nbsp;<input type="image" name="50on_f" src="img/b_50on.png" alt="50音検索" width="80" height="20" border="0" align="absmiddle" id="50on"></div></td>
+<td><div align="center"><img src="img/space.gif" alt="　" width="100" height="20"></div></td>
+<td><div align="center">降車停留所名&nbsp;<input type="image" name="50on_t" src="img/b_50on.png" alt="50音検索" width="80" height="20" border="0" align="absmiddle" id="50on"></div></td>
+</tr>
+<tr>
+<td><input name="stopname_f" type="text" id="stopname_f" value="亀田" size="40" maxlength="60" tabindex="1"></td>
+<td><div align="center"><input type="image" name="cmdChange" src="img/exch01.gif" alt="停留所入替" width="80" height="20" border="0" id="cmdChange"></div></td>
+<td><input name="stopname_t" type="text" id="stopname_t" value="未来" size="40" maxlength="60" tabindex="2"></td>
+</tr>
+</table>
+</div>
+<p align="center">
+<input type="image" name="Submit" src="img/b_again.png" alt="再検索" width="80" height="30" border="0" align="absmiddle" id="Submit" tabindex="3">
+</p>
+<hr width="90%">
+<p align="center">以下のリストから停留所を選択して下さい。</p>
+<table width="600" border="0" align="center" cellpadding="0" cellspacing="0">
+<tr class="c90">
+<td width="250"><div align="center">乗車停留所名</div></td>
+<td><div align="center"></div></td>
+<td width="250"><div align="center">降車停留所名</div></td>
+</tr>
+<tr>
+<td><div align="center">
+<select name="in" size="10" class="select" id="in">
+<option value="155" selected="selected">亀田支所前</option>
+<option value="215">亀田外郭通</option>
+<option value="408">亀田小学校前</option>
+<option value="453">亀田中学校前</option>
+<option value="89">亀田町</option>
+<option value="183">亀田中野</option>
+<option value="42">亀田港</option>
+</select>
+</div></td>
+<td><div align="center"><img src="img/space.gif" width="20" height="20"></div></td>
+<td width="250"><div align="center">
+<select name="out" size="10" class="select" id="out">
+<option value="165" selected="selected">はこだて未来大学</option>
+</select>
+</div></td>
+</tr>
+<tr><td>&nbsp;</td></tr>
+<tr>
+  <td>&nbsp;</td>
+  <td><p align="center">
+  <input type="image" name="Commit" src="img/b_disp.png" alt="表示" width="80" height="30" border="0" align="absmiddle" id="Commit" tabindex="4">
+</p>
+</td>
+  <td>&nbsp;</td>
+</tr>
+</table>
+
+</form>
+<p>&nbsp;</p>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceBeginEditable name="to-top" -->
+<p class="to_anchor"><a href="#top">▲ このページの先頭へ</a></p>
+<!-- InstanceEndEditable -->
+
+<!-- end #contents--></div>
+<div id="f-menu">
+<hr>
+<p><a href="index.php">バスロケTOP</a>　|　<a href="s_timetable01.php">時刻表検索</a>　｜　<a href="search01.php">バス接近情報検索</a>　｜　<a href="s_landmark01.php">ランドマーク検索</a>　｜　<a href="http://www.hotweb.or.jp/hakobus/">函館バスTOP</a></p>
+<!-- end #f-menu--></div>
+<span class="footer">函館バス株式会社　TEL：0138-51-3137</span>
+
+<!-- end #container--></div>
+</body>
+<!-- InstanceEnd --></html>
